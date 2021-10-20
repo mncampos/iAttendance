@@ -23,6 +23,12 @@ const users = {
       senha: '123456',
       // courses: [ classes.class[0], classes.class[1] ],
     },
+    {
+      id:69,
+      name: "Carlos",
+      email: "a",
+      senha: "a",
+    }
   ],
   professor: [
     {
