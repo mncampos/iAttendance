@@ -3,8 +3,9 @@
 ### Instruções de compilação:
 #### Instalar o Node.Js, abra um terminal e digite npm install -g expo-cli, após isso clone este repositório com o git, vá até o diretório iAttendance e digite npm start.
 
-# Final IHC Project IHC
-## Autors : Mateus Nunes, Richard Leal, Lucas G Silveira
+# i-Attendance 
+## Final IHC Project
+### Autors : Mateus Nunes, Richard Leal, Lucas G Silveira
 ### Compilation instructions:
 #### Install node.js
 #### Open terminal
