@@ -5,17 +5,16 @@ import { View, Linking, Text } from 'react-native'
 import { Button } from 'react-native-paper'
 
 
-export function Card(props){
+export function ClassDetails(props){
     const { users } = props;
-    console.log(users);
+    console.log(props);
     return(      
       <View>
         <Text>
-          { users.name + '\n' }
-          { users.email + '\n' }
-          { users.id + '\n' }
+          {/* { users.name + '\n' }
+          { users.email + '\n' } */}
         </Text>
       </View>
     );
 }
-export default Card;
+export default ClassDetails;

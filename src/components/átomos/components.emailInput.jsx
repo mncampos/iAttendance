@@ -7,11 +7,12 @@ const EmailInput = () => {
 
     return (
         <TextInput
-        mode = "outlined"
-        placeholder = "Insira seu E-mail"
-        label="E-mail"
-        value={text}
-        onChangeText={text => setText(text)} />
+            mode = "outlined"
+            placeholder = "Insira seu E-mail"
+            label="E-mail"
+            value={text}
+            onChangeText={text => setText(text)} 
+        />
     );
 
 }

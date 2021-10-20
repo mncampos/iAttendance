@@ -1,5 +1,5 @@
-import classes from "./classes";
-
+import classes from './classes';
+// const { course } = classes;
 const users = {
   student: [
     {
@@ -7,21 +7,21 @@ const users = {
       name: 'Lucas Silveira',
       email: 'lucasgsilveira@inf.ufrgs.br',
       senha: '123456',
-      // courses: [ class[0], class[1] ],
+      // courses: [ course[0] ],
     },
     {
       id: 2,
       name: 'Mateus Nunes',
       email: 'mateus.nunes@inf.ufrgs.br',
       senha: '123456',
-      // courses: [ classes.class[0], classes.class[1] ],
+      // courses: [ course[0], course[1] ],
     },
     {
       id: 3,
       name: 'Richard Leal',
       email: 'richard.leal@inf.ufrgs.br',
       senha: '123456',
-      // courses: [ classes.class[0], classes.class[1] ],
+      // courses: [ course[1] ],
     },
   ],
   professor: [
@@ -30,14 +30,14 @@ const users = {
       name: 'Anderson Maciel',
       email: 'anderson.maciel@inf.ufrgs.br',
       senha: '123456',
-      // lecture:[ classes.class[0] ],
+      // lecture:[ course[0] ],
     },
     {
       id: 5,
       name: 'Leandro Wives',
       email: 'lwives@inf.ufrgs.br',
       senha: '123456',
-      // lecture:[ classes.class[1] ],
+      // lecture:[ course[1] ],
     },
   ],
 }
