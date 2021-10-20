@@ -1,6 +1,4 @@
 import React from 'react';
-import PasswordInput from '../átomos/components.passwordInput';
-import EmailInput from '../átomos/components.emailInput';
 import { View, Linking, Text } from 'react-native'
 import { Button } from 'react-native-paper'
 

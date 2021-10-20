@@ -1,17 +1,26 @@
-import React from 'react';
-import PasswordInput from '../átomos/components.passwordInput';
-import EmailInput from '../átomos/components.emailInput';
+import React, {useState} from 'react';
 import { View, Linking } from 'react-native'
-import { Button } from 'react-native-paper'
+import { Button, TextInput } from 'react-native-paper'
 
 
 export function LoginInput({navigation}){
 
+    const [email, setEmail] = React.useState('');
+    const [password, setPassword] = React.useState('');
+
     return(
         <View>
-            <EmailInput/>
-            <PasswordInput/>
-            <Button mode='contained' color='#0066FF66' onPress = { () => navigation.navigate('CheckInScreen')}>
+
+
+            <TextInput label="Email" value={email} onChangeText={email => setEmail(email)}  />
+            <TextInput label="Senha" value={password} onChangeText={password => setPassword(password)}/>
+            <Button mode='contained' color='#0066FF66' onPress = { () => {
+
+                if(email == "prof")
+                navigation.navigate('ProfessorMainScreen');
+                else navigation.navigate('CheckInScreen');
+            }
+                }>
                 LOGIN
             </Button>
             <Button mode='text' color='grey' onPress = { () => Linking.openURL('http://www.ufrgs.br/ufrgs/inicial')}>
