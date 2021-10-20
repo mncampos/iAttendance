@@ -8,9 +8,7 @@ export function LoginScreen({navigation})
 {
     return(
         <View>
-
-        <LoginInput navigation={navigation}/>
-
+            <LoginInput navigation={navigation}/>
         </View>
     );
 }

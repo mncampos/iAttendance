@@ -1,24 +1,17 @@
 import React from 'react';
-import {StyleSheet, View } from 'react-native';
-import {MenuBar} from '../components/moléculas/components.menuBar';
-
+import { StyleSheet, View } from 'react-native';
+import { MenuBar } from '../components/moléculas/components.menuBar';
+import { Card } from '../components/moléculas/card';
 
 export function CheckInScreen({navigation}){
-
     return(
         <View style={styles.MainContainer}>
-
-            <View>
-
-            </View>
-
-
             <View style={styles.bottomView}>
-            <MenuBar navigation={navigation}/>
+                <MenuBar navigation={navigation}/>
+                <Card users={ users }/>
             </View>
         </View>
     );
-
 }
 
 const styles = StyleSheet.create(
