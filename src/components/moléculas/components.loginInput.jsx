@@ -14,7 +14,6 @@ export function LoginInput({navigation}){
             <Button mode='contained' color='#0066FF66' onPress = { () => navigation.navigate('CheckInScreen')}>
                 LOGIN
             </Button>
-
             <Button mode='text' color='grey' onPress = { () => Linking.openURL('http://www.ufrgs.br/ufrgs/inicial')}>
                 Esqueceu sua senha?
             </Button>

@@ -1,24 +1,20 @@
 import React from 'react';
-import {StyleSheet, View } from 'react-native';
-import {MenuBar} from '../components/moléculas/components.menuBar';
+import { StyleSheet, View } from 'react-native';
+import { MenuBar } from '../components/moléculas/components.menuBar';
 import { ProfessorMenuBar } from '../components/moléculas/components.professorMenuBar';
+import users from '../components/data/users';
+import { Card } from '../components/moléculas/card';
 
 export function CheckInScreen({navigation}){
-
+    const { student } = users
     return(
         <View style={styles.MainContainer}>
-
-            <View>
-
-            </View>
-
-
+            { student.map((user) => <Card users={ user } key={ user.id } />) }
             <View style={styles.bottomView}>
-            <ProfessorMenuBar navigation={navigation}/>
+                <MenuBar navigation={navigation}/>
             </View>
         </View>
     );
-
 }
 
 const styles = StyleSheet.create(
