@@ -5,7 +5,7 @@ import { Button } from 'react-native-paper'
 
 export function Card(props){
     const { users } = props;
-    console.log(users);
+   
     return(      
       <View>
         <Text>
