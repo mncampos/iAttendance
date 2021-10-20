@@ -9,7 +9,7 @@ export function CheckInScreen({navigation}){
     const { student } = users
     return(
         <View style={styles.MainContainer}>
-            { student.map((user, key) => <Card users={ user } key={ key } />) }
+            { student.map((user) => <Card users={ user } key={ user.id } />) }
             <View style={styles.bottomView}>
                 <MenuBar navigation={navigation}/>
             </View>

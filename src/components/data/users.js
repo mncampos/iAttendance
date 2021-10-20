@@ -1,3 +1,5 @@
+import classes from "./classes";
+
 const users = {
   student: [
     {
@@ -5,7 +7,7 @@ const users = {
       name: 'Lucas Silveira',
       email: 'lucasgsilveira@inf.ufrgs.br',
       senha: '123456',
-      // courses: [ classes.class[0], classes.class[1] ],
+      // courses: [ class[0], class[1] ],
     },
     {
       id: 2,
