@@ -1,13 +1,15 @@
 import React from 'react';
-import PasswordInput from '../átomos/components.passwordInput';
-import EmailInput from '../átomos/components.emailInput';
 import { View, Linking, Text } from 'react-native'
 import { Button } from 'react-native-paper'
 
 
 export function ClassDetails(props){
     const { users } = props;
+<<<<<<< HEAD:src/components/moléculas/classDetails.jsx
     console.log(props);
+=======
+   
+>>>>>>> main:src/components/moléculas/card.jsx
     return(      
       <View>
         <Text>
