@@ -7,13 +7,13 @@
 ## Final IHC Project
 ### Autors : Mateus Nunes, Richard Leal, Lucas G Silveira
 ### Compilation instructions:
-#### Install node.js
-#### Open terminal
-#### Type npm install -g expo-cli 
-#### Clone repo : git clone git@github.com:mncampos/iAttendance.git 
-#### Go into folder : cd iAttendance
-#### Type npm start 
-#### From your smartphone, download 'Expo Go' from Playstore
-#### Scan your QRCode
+Install node.js
+Open terminal
+Type npm install -g expo-cli 
+Clone repo : git clone git@github.com:mncampos/iAttendance.git 
+Go into folder : cd iAttendance
+Type npm start 
+From your smartphone, download 'Expo Go' from Playstore
+Scan your QRCode
 
  
