@@ -14,7 +14,7 @@ export function CheckInScreen({navigation}){
 
 
             <View style={styles.bottomView}>
-            <MenuBar navigation={navigation}/>
+            <ProfessorMenuBar navigation={navigation}/>
             </View>
         </View>
     );

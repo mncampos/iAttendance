@@ -1,5 +1,4 @@
 import React from 'react';
-import {View} from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { LoginScreen} from './navigations/navigations.loginScreen';
@@ -7,6 +6,7 @@ import { ReportsScreen } from './navigations/navigations.reportsScreen';
 import { CheckInScreen } from './navigations/navigations.checkInScreen';
 import { SettingsScreen} from './navigations/navigations.settingsScreen';
 import { QRScreen } from './navigations/navigations.readQRscreen';
+import { CodeScreen } from './navigations/navigations.generateCodeScreen';
 
 //Índice da aplicação, aqui estão localizadas as rotas
 
@@ -29,7 +29,8 @@ export default function Index()
                 <Stack.Screen name="ReportsScreen" component={ReportsScreen} options={{ title: 'Relatórios' }} />
                 <Stack.Screen name="SettingsScreen" component={SettingsScreen}/>
                 <Stack.Screen name="CheckInScreen" component={CheckInScreen} options={{title: 'CheckIn'}}/>
-                <Stack.Screen name="QRScreen" component={QRScreen} options={{title: 'Leitura do QRCode'}}/>
+                <Stack.Screen name="QRScreen" component={QRScreen} options={{title: 'Leitura do QRCode', headerShown: false}}/>
+                <Stack.Screen name="CodeScreen" component={CodeScreen} options={{title: 'Share'}}/>
             </Stack.Navigator>
         </NavigationContainer>
     );
