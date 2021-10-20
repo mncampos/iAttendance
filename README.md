@@ -6,7 +6,7 @@
 # i-Attendance 
 ## Final IHC Project
 ### Autors: Mateus Nunes, Richard Leal, Lucas G Silveira
-### Compilation instructions:
+#### Compilation instructions:
 - Install node.js;
 - Open terminal;
 - Type npm install -g expo-cli;
