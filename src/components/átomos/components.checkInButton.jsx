@@ -1,6 +1,6 @@
 import React from 'react';
-import {View} from 'react-native';
-import {IconButton} from 'react-native-paper';
+import { View } from 'react-native';
+import { IconButton } from 'react-native-paper';
 
 export function CheckInButton({navigation})
 {

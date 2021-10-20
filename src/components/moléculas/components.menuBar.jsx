@@ -8,10 +8,9 @@ export function MenuBar({navigation})
 {
     return(
         <View style={styles.MenuPos}>
-        <ReportsButton style={styles.Report}  navigation={navigation}/>    
-        <CheckInButton navigation={navigation}/>
-        <SettingsButton  navigation={navigation}/>
-
+            <ReportsButton style={styles.Report}  navigation={navigation}/>    
+            <CheckInButton navigation={navigation}/>
+            <SettingsButton  navigation={navigation}/>
         </View>
     );
 }

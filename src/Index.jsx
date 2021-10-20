@@ -22,9 +22,7 @@ export default function Index()
                     backgroundColor:'#6461FF'
                 },
                 headerTintColor: 'white',
-
             }}>
-
                 <Stack.Screen name="LoginScreen"  component={LoginScreen}   options={{ title: 'Login' }}/>
                 <Stack.Screen name="ReportsScreen" component={ReportsScreen} options={{ title: 'Relatórios' }} />
                 <Stack.Screen name="SettingsScreen" component={SettingsScreen}/>
