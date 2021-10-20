@@ -5,15 +5,16 @@ import { View, Linking } from 'react-native'
 import { Button } from 'react-native-paper'
 
 
-export function Card({navigation}){
+export function Card(props){
     // const { users } =  this.props;
+    console.log(props);
+
     return(      
         <View>
-          { console.log(users) };
           {/* <section className="MovieCard">
             <img src={ movie.imagePath } alt={ movie.title } />
             <h4>{ movie.title }</h4>
-            <h5>{ movie.subtitle }</h5>
+            <h5>{ movie.subtitle }</h5>r
             <p>{ movie.storyline }</p>
             <Rating rating={ movie.rating } />
           </section>         */}
