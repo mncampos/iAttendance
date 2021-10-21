@@ -3,7 +3,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { LoginScreen } from "./navigations/navigations.loginScreen";
 import { ReportsScreen } from "./navigations/navigations.reportsScreen";
-import { CheckInScreen } from "./navigations/navigations.checkInScreen";
+import { MainScreen } from "./navigations/navigations.mainScreen";
 import { SettingsScreen } from "./navigations/navigations.settingsScreen";
 import { QRScreen } from "./navigations/navigations.readQRscreen";
 import { CodeScreen } from "./navigations/navigations.generateCodeScreen";
@@ -24,6 +24,7 @@ export default function Index() {
             backgroundColor: "#6461FF",
           },
           headerTintColor: "white",
+          headerTitleAlign: 'center'
         }}
       >
         <Stack.Screen
@@ -42,9 +43,9 @@ export default function Index() {
           options={{ title: "Configurações" }}
         />
         <Stack.Screen
-          name="CheckInScreen"
-          component={CheckInScreen}
-          options={{ headerShown: false }}
+          name="MainScreen"
+          component={MainScreen}
+          options={{ title: "Disciplinas"}}
         />
         <Stack.Screen
           name="QRScreen"
