@@ -5,9 +5,7 @@ import { LoginInput } from "../components/moléculas/components.loginInput";
 export function LoginScreen({ navigation }) {
   return (
     <View>
-        <LoginInput navigation={navigation} />
+      <LoginInput navigation={navigation} />
     </View>
   );
 }
-
-

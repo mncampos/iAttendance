@@ -12,7 +12,7 @@ export function LoginInput({ navigation }) {
     <View>
       <TextInput
         label="Email"
-        mode='outlined'
+        mode="outlined"
         style={styles.textInputs}
         autoCapitalize="none"
         autoCorrect={false}
@@ -26,7 +26,7 @@ export function LoginInput({ navigation }) {
       />
       <TextInput
         style={styles.textInputs}
-        mode='outlined'
+        mode="outlined"
         label="Senha"
         secureTextEntry={true}
         autoCapitalize="none"
@@ -69,11 +69,10 @@ export function LoginInput({ navigation }) {
 
 const styles = StyleSheet.create({
   loginButton: {
-    margin: '5%',
-    borderRadius: 50
-  },  
+    margin: "5%",
+    borderRadius: 50,
+  },
   textInputs: {
-    margin: '5%',
-
-  }
-})
+    margin: "5%",
+  },
+});

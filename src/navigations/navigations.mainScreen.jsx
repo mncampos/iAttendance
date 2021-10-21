@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, View} from "react-native";
 import { MenuBar } from "../components/moléculas/components.menuBar";
 import { disciplines } from "../components/data/database";
 import { CourseCard } from "../components/moléculas/components.courseCard";
@@ -14,7 +14,6 @@ export function MainScreen({ navigation }) {
           disciplineSchedule={discipline.courseSchedule}
           disciplineId={discipline.courseId}
           key={discipline.courseId}
-          
         />
       ))}
       <View style={styles.bottomView}>
