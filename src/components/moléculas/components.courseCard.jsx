@@ -1,17 +1,13 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View} from "react-native";
+import { Button } from 'react-native-paper';
 
 export function CourseCard(props) {
-  
-  const { users } = props;
-
   return (
-    <View>
-      <Text>
-        {users.name + "\n"}
-        {users.email + "\n"}
-        {users.id + "\n"}
-      </Text>
+    <View style={{ marginBottom: 10, width: '50%'} }>
+      <Button icon='logout' mode='contained' >
+        {props.disciplineName + "\n"}
+      </Button>
     </View>
   );
 }

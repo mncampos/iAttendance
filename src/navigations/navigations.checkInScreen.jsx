@@ -1,15 +1,21 @@
 import React from "react";
 import { StyleSheet, View } from "react-native";
 import { MenuBar } from "../components/moléculas/components.menuBar";
-import users from "../components/data/users";
+import { disciplines } from "../components/data/database";
 import { CourseCard } from "../components/moléculas/components.courseCard";
 
 export function CheckInScreen({ navigation }) {
-  const { student } = users;
+  const { course } = disciplines;
   return (
     <View style={styles.MainContainer}>
-      {student.map((user) => (
-        <CourseCard users={user} key={user.id} />
+      {course.map((discipline) => (
+        <CourseCard
+          disciplineName={discipline.courseName}
+          disciplineSchedule={discipline.courseSchedule}
+          disciplineId={discipline.courseId}
+          key={discipline.courseId}
+          
+        />
       ))}
       <View style={styles.bottomView}>
         <MenuBar navigation={navigation} />

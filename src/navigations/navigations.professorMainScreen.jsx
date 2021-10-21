@@ -1,7 +1,7 @@
 import React from "react";
 import { StyleSheet, View } from "react-native";
 import { ProfessorMenuBar } from "../components/moléculas/components.professorMenuBar";
-import users from "../components/data/users";
+import { users } from "../components/data/database";
 import { CourseCard } from "../components/moléculas/components.courseCard";
 
 export function ProfessorMainScreen({ navigation }) {

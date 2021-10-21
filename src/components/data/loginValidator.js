@@ -1,11 +1,12 @@
-import users from './users';
+import {users} from './database';
 
 
 //Retorna 0 se foi inválido, 1 se for aluno e 2 se for professor
 export function LoginValidator( email, password)
 {
-    const professores = users.professor;
-    const alunos = users.student;
+
+    const professores = users.professores;
+    const alunos = users.alunos;
 
    
 
@@ -13,7 +14,7 @@ export function LoginValidator( email, password)
     {
         if(email == professores[i].email)
         {
-            if(password == professores[i].senha)
+            if(password == professores[i].password)
             {
                 return 2;
             }
@@ -24,7 +25,7 @@ export function LoginValidator( email, password)
     {
         if(email == alunos[i].email)
         {
-            if(password == alunos[i].senha)
+            if(password == alunos[i].password)
             {
                 return 1;
             }
