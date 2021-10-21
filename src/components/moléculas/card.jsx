@@ -1,6 +1,5 @@
 import React from 'react';
 import { View, Linking, Text } from 'react-native'
-import { Button } from 'react-native-paper'
 
 
 export function Card(props){

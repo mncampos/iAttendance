@@ -1,7 +1,6 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { MenuBar } from '../components/moléculas/components.menuBar';
-import { ProfessorMenuBar } from '../components/moléculas/components.professorMenuBar';
 import users from '../components/data/users';
 import { Card } from '../components/moléculas/card';
 

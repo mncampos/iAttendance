@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { View, Linking } from 'react-native'
 import { Button, TextInput } from 'react-native-paper'
 import { LoginValidator } from '../data/loginValidator';
