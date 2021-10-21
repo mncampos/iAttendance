@@ -4,7 +4,7 @@ import { MenuBar } from "../components/moléculas/components.menuBar";
 import { disciplines } from "../components/data/database";
 import { CourseCard } from "../components/moléculas/components.courseCard";
 
-export function CheckInScreen({ navigation }) {
+export function MainScreen({ navigation }) {
   const { course } = disciplines;
   return (
     <View style={styles.MainContainer}>

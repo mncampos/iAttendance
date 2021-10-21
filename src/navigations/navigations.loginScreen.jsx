@@ -1,11 +1,13 @@
 import React from "react";
-import { View } from "react-native";
+import { View, StyleSheet } from "react-native";
 import { LoginInput } from "../components/moléculas/components.loginInput";
 
 export function LoginScreen({ navigation }) {
   return (
     <View>
-      <LoginInput navigation={navigation} />
+        <LoginInput navigation={navigation} />
     </View>
   );
 }
+
+
