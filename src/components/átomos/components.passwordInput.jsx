@@ -7,14 +7,14 @@ const PasswordInput = () => {
 
     return (
         <TextInput
-            mode = "outlined"
-            placeholder = "Insira sua senha"
+            mode="outlined"
+            placeholder="Insira sua senha"
             label="Senha"
-            value={text}
-            onChangeText={text => setText(text)} 
+            value={ text }
+            onChangeText={text => setText(text)}
+            secureTextEntry={true}
         />
     );
-
 }
 
 export default PasswordInput;

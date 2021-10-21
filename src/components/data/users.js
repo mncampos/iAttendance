@@ -1,5 +1,4 @@
 import classes from './classes';
-// const { course } = classes;
 const users = {
   student: [
     {

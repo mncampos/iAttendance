@@ -21,7 +21,7 @@ export function LoginInput({navigation}){
             <Button 
                 mode='text' 
                 color='grey' 
-                onPress = { () => Linking.openURL('http://www.ufrgs.br/ufrgs/inicial')}
+                onPress = { () => Linking.openURL('https://www1.ufrgs.br/portalservicos/PortalServicosLogin.php?Destino=ccd7f388f9a3e25ef6aff3b98c773f65#')}
             >
                 Esqueceu sua senha?
             </Button>
