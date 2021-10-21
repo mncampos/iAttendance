@@ -1,6 +1,6 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
-import { MenuButton } from "../átomos/components.MenuButton";
+import { MenuButton } from "../átomos/components.menuButton";
 
 export function ProfessorMenuBar({ navigation }) {
   return (

@@ -1,7 +1,8 @@
 import React from "react";
 import { View, Text } from "react-native";
 
-export function Card(props) {
+export function CourseCard(props) {
+  
   const { users } = props;
 
   return (
@@ -14,4 +15,3 @@ export function Card(props) {
     </View>
   );
 }
-export default Card;

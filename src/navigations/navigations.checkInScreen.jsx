@@ -2,14 +2,14 @@ import React from "react";
 import { StyleSheet, View } from "react-native";
 import { MenuBar } from "../components/moléculas/components.menuBar";
 import users from "../components/data/users";
-import { Card } from "../components/moléculas/card";
+import { CourseCard } from "../components/moléculas/components.courseCard";
 
 export function CheckInScreen({ navigation }) {
   const { student } = users;
   return (
     <View style={styles.MainContainer}>
       {student.map((user) => (
-        <Card users={user} key={user.id} />
+        <CourseCard users={user} key={user.id} />
       ))}
       <View style={styles.bottomView}>
         <MenuBar navigation={navigation} />
