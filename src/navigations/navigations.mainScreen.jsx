@@ -1,14 +1,21 @@
 import React from "react";
-import { StyleSheet, View} from "react-native";
+import { StyleSheet, View, Text} from "react-native";
 import { MenuBar } from "../components/moléculas/components.menuBar";
-import { disciplines } from "../components/data/database";
 import { CourseCard } from "../components/moléculas/components.courseCard";
+import { getUser } from "../components/data/database";
 
-export function MainScreen({ navigation }) {
-  const { course } = disciplines;
+
+export function MainScreen(props) {
+
+
+  const { email } = props.route.params;
+
+  const user  = getUser(email.email);
+
   return (
     <View style={styles.MainContainer}>
-      {course.map((discipline) => (
+      <Text> {`Bem vindo, ${user.name}`} </Text>
+      {user.disciplines.map((discipline) => (
         <CourseCard
           disciplineName={discipline.courseName}
           disciplineSchedule={discipline.courseSchedule}
@@ -17,7 +24,7 @@ export function MainScreen({ navigation }) {
         />
       ))}
       <View style={styles.bottomView}>
-        <MenuBar navigation={navigation} />
+        <MenuBar navigation={props.navigation} />
       </View>
     </View>
   );

@@ -46,7 +46,7 @@ export function LoginInput({ navigation }) {
             alert("Senha ou e-mail inválidos. Tente novamente.");
           if (loginResult == 1) {
             alert("Login de aluno confirmado. Seja bem vindo.");
-            navigation.navigate("MainScreen");
+            navigation.navigate("MainScreen", {email : {email}, password: {password}});
           }
           if (loginResult == 2) {
             alert("Login de professor confirmado. Seja bem vindo.");

@@ -79,6 +79,13 @@ const users = {
       password: "a",
       disciplines: [disciplines.course[0], disciplines.course[1]],
     },
+    {
+      id: 5,
+      name: "Godofredo, O Disciplinado",
+      email: "b",
+      password: "b",
+      disciplines: [disciplines.course[0], disciplines.course[1], disciplines.course[2], disciplines.course[3], disciplines.course[4], disciplines.course[5]],
+    },
   ],
   professores: [
     {
@@ -123,4 +130,12 @@ const classes = {
   ],
 };
 
-export { users, disciplines, classes };
+function getUser(email){
+    for(let i =0; i < users.alunos.length; i++)
+    {
+        if(email == users.alunos[i].email)
+            return users.alunos[i];
+    }
+}
+
+export { users, disciplines, classes, getUser };
