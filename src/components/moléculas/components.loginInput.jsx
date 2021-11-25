@@ -50,7 +50,7 @@ export function LoginInput({ navigation }) {
           }
           if (loginResult == 2) {
             alert("Login de professor confirmado. Seja bem vindo.");
-            navigation.navigate("ProfessorMainScreen");
+            navigation.navigate("ProfessorMainScreen", {email : {email}, password: {password}});
           }
         }}
       >

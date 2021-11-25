@@ -138,4 +138,12 @@ function getUser(email){
     }
 }
 
-export { users, disciplines, classes, getUser };
+function getProfessor(email){
+  for(let i =0; i < users.professores.length; i++)
+  {
+      if(email == users.professores[i].email)
+          return users.professores[i];
+  }
+}
+
+export { users, disciplines, classes, getUser, getProfessor };

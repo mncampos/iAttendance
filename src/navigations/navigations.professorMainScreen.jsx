@@ -1,18 +1,28 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, View, Text } from "react-native";
 import { ProfessorMenuBar } from "../components/moléculas/components.professorMenuBar";
-import { users } from "../components/data/database";
+import { getProfessor } from "../components/data/database";
 import { CourseCard } from "../components/moléculas/components.courseCard";
 
-export function ProfessorMainScreen({ navigation }) {
-  const { student } = users;
+
+export function ProfessorMainScreen(props) {
+  const { email } = props.route.params;
+
+  const user  = getProfessor(email.email);
+
   return (
     <View style={styles.MainContainer}>
-      {student.map((user) => (
-        <CourseCard users={user} key={user.id} />
+      <Text> {`Bem vindo, ${user.name}`} </Text>
+      {user.disciplines.map((discipline) => (
+        <CourseCard
+          disciplineName={discipline.courseName}
+          disciplineSchedule={discipline.courseSchedule}
+          disciplineId={discipline.courseId}
+          key={discipline.courseId}
+        />
       ))}
       <View style={styles.bottomView}>
-        <ProfessorMenuBar navigation={navigation} />
+        <ProfessorMenuBar navigation={props.navigation} />
       </View>
     </View>
   );
